@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('/Fonts/PressStart2P-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Press Start 2P';
+}
+
+.hero {
+    background-color: #333;
+    padding: 50px 0;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    color: #a81bc4;
+}
+
+.hero .avatar {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.projetos {
+    padding: 50px 0;
+}
+
+.card {
+    background-color: #1e1e1e;
+    color: white;
+    border: none;
+}
+
+.card img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.btn-warning {
+    color: black;
+    font-weight: bold;
+}
+
+.menu-dropdown {
+    position: absolute;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 5px;
+    margin-top: 5px;
+    right: 0;
+    z-index: 1000;
+}
+
+.menu-dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-dropdown a:hover {
+    background-color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero .avatar {
+        margin-right: 0;
+        margin-bottom: 20px;
+        
+    }
+}
+
+.projeto-scroll {
+    overflow-y: auto; /* Habilita o scroll vertical */
+    padding: 30px;
+    background-color: #444;
+    max-height: 600px; /* Defina uma altura máxima para a rolagem */
+}
+
+.projeto-scroll .row {
+    flex-wrap: wrap; /* Permite que os cards quebrem em várias linhas */
+}
+
+.projeto-scroll .col-md-3 {
+    width: 300px; /* Ajuste a largura conforme necessário */
+    margin-bottom: 20px; /* Adiciona espaço entre as linhas de cards */
+}
+
+header {
+    position: sticky; /* ou position: fixed; */
+    top: 0;
+    z-index: 1000; /* Garante que o cabeçalho esteja acima de outros elementos */
+}
+
+/* ... (seu CSS anterior) ... */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.projeto-scroll {
+    overflow-y: auto;
+    padding: 30px;
+    background-color: #444;
+    max-height: 600px;
+}
+
+.projeto-scroll .row {
+    flex-wrap: wrap;
+}
+
+.projeto-scroll .col-md-3 {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para a seção de abas */
+.tabs {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: left;
+    border-bottom: 1px solid #ccc;
+    flex-wrap: wrap;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    color: white;
+}
+
+.tab-button.active {
+    border-bottom: 2px solid #007bff;
+}
+
+.tab-contents {
+    margin-top: 20px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Estilos para a seção de accordions */
+.faq {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.accordion-header {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: #222;
+}
+
+.accordion-content.show {
+    display: block;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: white;    
+}
+
+body.bg-dark {
+    background-image: url('/Images/TDF\ do\ portifolio.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Opcional: mantém a imagem fixa durante a rolagem */
+}
+
+.btn-warning {
+    background-color: #ff7200; /* Cor laranja */
+    border-color: #a81bc4; /* Cor da borda (opcional) */
+    color: white; /* Cor do texto (opcional) */
+    border: 5px solid #a81bc4;
+}
+.btn-warning:hover {
+    background-color: #e66600; /* Cor laranja mais escura ao passar o mouse (opcional) */
+    border-color: #a81bc4; /* Cor da borda ao passar o mouse (opcional) */
+    color: #a81bc4; /* Cor do texto ao passar o mouse (opcional) */
+}
+
+.tab-content {
+    display: none;
+    width: 100%; /* Defina a largura máxima desejada */
+    word-wrap: break-word; /* Quebra palavras longas para evitar estouro */
+    background-color: #555454;
+    padding: 20px; /* Adiciona espaçamento interno */
+    line-height: 1.6; /* Aumenta o espaçamento entre as linhas */
+}
+
+.tab-content.active {
+    display: block;
+}
+
